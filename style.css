@@ -1,0 +1,146 @@
+body{
+background-image:url("terrain.png");
+overflow: hidden;
+}
+
+#contour{
+    border: 3px solid white;
+    height: 98vh;
+    width: 99vw;
+
+}
+#milieu{
+    border-left: 3px solid white;
+    height: 98vh;
+    width: 0vw;
+    margin-left: calc(50% - 3px);
+}
+
+#cercle{
+    border: 3px solid white;
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#but1{
+    border: 3px solid white;
+    height: 53vh;
+    width: 15vw;
+    position: absolute;
+    top: 50%; left: 8.15%;
+    transform: translate(-50%, -50%);
+    border-left: 0px;
+}
+
+#but2{
+    border: 3px solid white;
+    height: 53vh;
+    width: 15vw;
+    position: absolute;
+    top: 50%; right: -7.2%;
+    transform: translate(-50%, -50%);
+    border-right: 0px;
+}
+
+#sixm1{
+    border: 3px solid white;
+    height: 25vh;
+    width: 5vw;
+    position: absolute;
+    top: 50%; right: -17%;
+    transform: translate(-50%, -50%);
+    border-right: 0px;
+}
+
+#sixm2{
+    border: 3px solid white;
+    height: 25vh;
+    width: 5vw;
+    position: absolute;
+    top: 50%; left: 17%;
+    transform: translate(-50%, -50%);
+    border-left: 0px;
+}
+
+#demia{
+    border: 3px solid white;
+    width: 12vh; height: 24vh;
+    position: absolute;
+    top: 50%; left: 122%;
+    transform: translate(-50%, -50%);
+    border-left: 0px;
+    border-radius: 0 24vh 24vh 0;
+}
+
+#demib{
+    border: 3px solid white;
+    width: 12vh; height: 24vh;
+    position: absolute;
+    top: 50%; right: 79%;
+    transform: translate(-50%, -50%);
+    border-right: 0px;
+    border-radius: 24vh 0 0 24vh;
+}
+
+#pointg{
+    border: 5px solid white;
+    height: 0.75px;
+    width: 0.75px;
+    position: absolute;
+    top: 50%; left: 65%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+}
+
+#pointd{
+    border: 5px solid white;
+    height: 0.75px;
+    width: 0.75px;
+    position: absolute;
+    top: 50%; right: 60%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+}
+
+#pointc{
+    border: 5px solid white;
+    height: 0.75px;
+    width: 0.75px;
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+
+}
+    
+#ballon{
+    width:64px;
+    height:65px;
+    background-image: url("ballon.png");
+    background-size: cover;
+    position: absolute;
+    animation-name: bounce;
+    top: 50%; right: 49%;
+    transform: translate(50%, -50%);
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bounce{
+    from{
+        width:32px;
+        height:32.5px;
+        left: calc(50% - 30px);
+    }
+    to{
+        left: calc(50% - 64px);
+        top: 25%;
+    }
+}
